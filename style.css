@@ -1,0 +1,379 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Amatic+SC:wght@700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header e Navegação */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800/FFD700/000000?text=Fundo+Festa+Junina+Campo+Cidade') no-repeat center center/cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #FFEB3B; /* Amarelo Vibrante */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFEB3B;
+    transform: scale(1.05);
+}
+
+.hero {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.hero h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    color: #FFEB3B;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    max-width: 700px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF6F00; /* Laranja vibrante */
+    color: #fff;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 50px; /* Botão arredondado */
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #e06000;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    color: #795548; /* Marrom para títulos de seção */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    color: #555;
+}
+
+/* Seção Comércio */
+.comercio-section {
+    background-color: #fff;
+}
+
+.comercio-destaques {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.destaque-item {
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #eee;
+}
+
+.destaque-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.destaque-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #FFD700;
+}
+
+.destaque-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #4CAF50; /* Verde */
+}
+
+.destaque-item p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Seção Festa Junina */
+.junina-section {
+    background-color: #FFF3E0; /* Um tom de laranja bem suave */
+    border-top: 5px dashed #FFD700;
+    border-bottom: 5px dashed #FFD700;
+}
+
+.junina-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.junina-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 3px solid #FF6F00;
+}
+
+.junina-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.junina-item:hover img {
+    transform: scale(1.1);
+}
+
+.junina-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(121, 85, 72, 0.7); /* Marrom semitransparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.junina-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Seção Contato */
+.contato-section {
+    background-color: #fefefe;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contato-form input[type="text"],
+.contato-form input[type="email"],
+.contato-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.contato-form input[type="text"]:focus,
+.contato-form input[type="email"]:focus,
+.contato-form textarea:focus {
+    border-color: #FF6F00;
+    outline: none;
+}
+
+.contato-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contato-form .btn {
+    align-self: center;
+    width: auto;
+    padding: 15px 40px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 35px 0;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero h1 {
+        font-size: 3.2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    section h2 {
+        font-size: 2.8em;
+    }
+
+    .comercio-destaques, .junina-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaque-item, .junina-item {
+        width: 90%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        margin: 5px 8px;
+        font-size: 0.9em;
+    }
+
+    section h2 {
+        font-size: 2.2em;
+    }
+}
